@@ -1,7 +1,7 @@
 import { Models } from '@rematch/core'
-import { count } from './count'
+import { crypto } from './crypto'
 
 export interface RootModel extends Models<RootModel> {
-  count: typeof count;
+  crypto: typeof crypto;
 }
-export const models: RootModel = { count }
+export const models: RootModel = { crypto }

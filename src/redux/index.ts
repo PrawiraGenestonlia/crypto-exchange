@@ -8,8 +8,8 @@ export type Store = typeof store;
 export type Dispatch = RematchDispatch<RootModel>;
 export type RootState = RematchRootState<RootModel>;
 const { dispatch } = store
-
+const useReduxSelector = ():RootState => useSelector((state: RootState) => state)
 export {
   dispatch,
-  useSelector
+  useReduxSelector
 }
